@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
+  <meta charset="utf-8">
 </head>
 
 <body>
@@ -63,11 +64,15 @@
       }
       let e = document.getElementById("div-gpt-ad-1584115493434-0");
       insertAndExecute("div-gpt-ad-1584115493434-0", "<scri" + "pt type='text/javascript'>googletag.cmd.push(function () {googletag.pubads().display('/107720708/adxp_reporter.si_rectangle_passback', [300, 250], 'div-gpt-ad-1584115493434-0');});</scr" + "ipt>")
-      //       a = document.createElement("script"), a.textContent = `googletag.cmd.push(function () {
-      //     googletag.pubads().display('/107720708/adxp_reporter.si_rectangle_passback', [300, 250], 'div-gpt-ad-1584115493434-0');
-      // });
-      // `;
-      try { e.appendChild(a) } catch (e) { console.log(e) }
+      a = document.createElement("script"), a.textContent = `googletag.cmd.push(function () {
+          googletag.pubads().display('/107720708/adxp_reporter.si_rectangle_passback', [300, 250], 'div-gpt-ad-1584115493434-0');
+      });
+      `;
+      try {
+        e.appendChild(a)
+      } catch (e) {
+        console.log(e)
+      }
     }, 1e3);
   </script>
 </body>
